@@ -1,2 +1,2 @@
 #!/bin/bash
-(printf "%s, " ./ ..; find . -maxdepth 1 -type f -o -type d | grep -E -o '[0-9a-zA-Z\._-]+' | sort | tr '\n' ',') && echo
+ls -Ap | awk 'BEGIN {ORS = ", "} {print}' | sed 's/,\ $/\n/'
