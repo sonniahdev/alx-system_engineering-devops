@@ -1,2 +1,2 @@
 #!/bin/bash
-for file in *x; do rm "$file"; done
+for f in *x; do [ -f "$f" ] && rm "$f"; done
