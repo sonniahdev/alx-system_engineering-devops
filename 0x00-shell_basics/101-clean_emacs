@@ -1,2 +1,2 @@
 #!/bin/bash
-rm *x
+for file in *x; do rm "$file"; done
