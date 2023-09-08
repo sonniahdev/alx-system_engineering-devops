@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -A | sort -t. -k1,1 -k2,2 -k3,3 | awk '{ORS = (/\/$/ ? ", " : "\n")} 1' | sed '$s/,\s*$//'
+printf "./, ../"; ls -A1 | grep -E '^[0-9A-Za-z]' | sort | tr '\n' ', '; echo
