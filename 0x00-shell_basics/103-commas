@@ -1,0 +1,2 @@
+#!/bin/bash
+find . -maxdepth 1 -exec basename {} \; | awk '{print $1","}' | sort -t'/' -k2,2 -k1,1 | tr -d '\n' && echo
