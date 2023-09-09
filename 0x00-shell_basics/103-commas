@@ -1,1 +1,1 @@
-0       string  SCHOOL    School data file
+echo '0 string SCHOOL School data file' > school.magic && file -C -f school.magic && rm school.magic
