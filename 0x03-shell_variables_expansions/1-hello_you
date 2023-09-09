@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "hello $USER"
+chmod +x hello_user.sh
